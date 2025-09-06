@@ -1,0 +1,43 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Survey Form<h1>
+    <p id="description">Please fill out this short survey</p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name:</label>
+      <input id="name" type="text"  placeholder="Enter your name" required>
+      <label id="email-label" for="email">Email:</label>
+      <input id="email" type="email" placeholder="Enter your email" required>
+      <label id="number-label" for="number">Number:</label>
+      <input id="number" type="number" min="10" max="12" placeholder="Enter your number" required>
+
+      <label for="dropdown">Choose an option:</label>
+      <select id="dropdown">
+        <option value="option-1">Option 1</option>
+        <option value="option-2">Option 2</option>
+      </select>
+      <p>Choose one:</p>
+      <input type="radio" id="radio1" name="choice" value="one">
+      <label for="radio1">Option one</label>
+      <input type="radio" id="radio2" name="choice" value="two">
+      <label for="radio2">Option two</label>
+      <p>selct your preferences:</p>
+      <input type="checkbox" id="check1" value="A">
+      <label for="check1">Choice A</label>
+      <input type="checkbox" id="check2" value="B">
+      <label for="check2">Choice B</label>
+      <p>Additional comments:</p>
+      <textarea id="comments" rows="4" cols="40" placeholder="Write your comments here..."></textarea>
+      <button id="submit" type="submit">Submit</button>
+      </form>
+  </body>
+</html>
+
+** end of index.html **
+

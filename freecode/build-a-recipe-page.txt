@@ -1,0 +1,39 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tea Recipe</title>
+</head>
+<body>
+  <h1>Recipe of Tea</h1>
+  <p>Tea, derived from the leaves of the <em>Camellia sinensis</em> plant, is the most widely consumed beverage globally, after water.</p>
+
+  <h2>Ingredients</h2>
+  <ul>
+    <li>Milk</li>
+    <li>Tea leaves</li>
+    <li>Ginger</li>
+    <li>Water</li>
+    <li>Sugar</li>
+    <li>Clove</li>
+    <li>Black pepper</li>
+    <li>Cardamom</li>
+  </ul>
+
+  <h2>Instructions</h2>
+  <ol>
+    <li>Boil water in a pan.</li>
+    <li>Add tea leaves and boil for 2–3 minutes.</li>
+    <li>Add crushed ginger, clove, black pepper, and cardamom.</li>
+    <li>Pour in milk and sugar; boil for 2 more minutes.</li>
+    <li>Strain and serve hot.</li>
+    <img src="https://cdn.freecodecamp.org/curriculum/labs/recipe.jpg" alt="tea">
+  </ol>
+</body>
+</html>
+
+
+** end of index.html **
+

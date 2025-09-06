@@ -1,0 +1,46 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Player Page</title>
+</head>
+<body>
+  <!-- Main title -->
+  <h1>My Media Page</h1>
+
+  <!-- First Section: Audio -->
+  <section>
+    <h2>Now Playing: Sailing Away</h2>
+    <audio controls aria-label="Audio player for Sailing Away">
+      <source src="https://cdn.freecodecamp.org/curriculum/js-music-player/sailing-away.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <!-- Second Section: Video -->
+  <section>
+    <h2>Now Playing: What is the map method and how does it work</h2>
+    <video controls width="600" aria-label="Video player explaining the map method">
+      <source src="https://cdn.freecodecamp.org/curriculum/labs/What is the map method and how does it work.mp4" type="video/mp4">
+      <track src="subtitles.vtt" kind="subtitles" srclang="en" label="English">
+      Your browser does not support the video element.
+    </video>
+  </section>
+
+  <!-- Third Section: Transcript -->
+  <section>
+    <h2>Transcript</h2>
+    <p>
+      In this video, we will learn about the JavaScript map method, 
+      how it works, and how you can use it to transform arrays in your code.
+    </p>
+  </section>
+</body>
+</html>
+
+
+** end of index.html **
+
