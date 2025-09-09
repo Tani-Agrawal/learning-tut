@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events Example</title>
+</head>
+<body>
+    <a href="index.html">main page</a>
+
+    
+  <!-- Button with click event -->
+  <button id="btn">Click Me</button>
+  <p id="msg"></p>
+
+  <!-- Input with change event -->
+  <input type="text" id="name" placeholder="Enter your name">
+  <p id="output"></p>
+
+  <script>
+    // Click Event
+    document.getElementById("btn").addEventListener("click", function() {
+      document.getElementById("msg").innerHTML = "🎉 Button was clicked!";
+    });
+
+    // Change Event on input
+    document.getElementById("name").addEventListener("change", function() {
+      let val = document.getElementById("name").value;
+      document.getElementById("output").innerHTML = "Hello, " + val + " 👋";
+    });
+  </script>
+</body>
+</html>

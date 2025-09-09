@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+    background-color: rgb(203, 224, 227);
+}
+h1{
+text-align: center;
+  font-family: cursive, sans-serif;
+  font-size: 32px;
+  color: #1e3d59;
+  text-shadow: 1px 1px 2px #aaa;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ol {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  columns: 2; 
+  column-gap: 40px;
+}
+
+li {
+  padding: 8px;
+  margin: 5px 0;
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  break-inside: avoid; /* item cut na ho column ke beech */
+}
+
+li:hover {
+  background: #e3f2fd;
+  transform: translateX(5px);
+  cursor: pointer;
+}
