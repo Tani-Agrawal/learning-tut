@@ -1,0 +1,180 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <header>JS Documentation</header>
+    <a href="#Introduction" class="nav-link">Introduction</a>
+    <a href="#Variables" class="nav-link">Variables</a>
+    <a href="#Functions" class="nav-link">Functions</a>
+    <a href="#Loops" class="nav-link">Loops</a>
+    <a href="#Objects" class="nav-link">Objects</a>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="main-doc">
+
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>JavaScript is a powerful scripting language used for web development.</p>
+      <p>It helps in making interactive websites.</p>
+      <p>It can be used for both frontend and backend development.</p>
+      <code>console.log("Hello, World!");</code>
+      <ul>
+        <li>Lightweight</li>
+        <li>Interpreted</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>Variables are containers for storing data values.</p>
+      <p>In JavaScript, you can declare variables using var, let, or const.</p>
+      <code>let x = 10;</code>
+      <code>const y = "Hello";</code>
+      <ul>
+        <li>var - function scoped</li>
+        <li>let - block scoped</li>
+        <li>const - block scoped, cannot be reassigned</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <p>Functions are blocks of reusable code.</p>
+      <p>You can call a function to execute code multiple times.</p>
+      <code>function greet(){ return "Hello"; }</code>
+      <p>Functions can take parameters and return values.</p>
+      <ul>
+        <li>Reusable</li>
+        <li>Maintainable</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Loops">
+      <header>Loops</header>
+      <p>Loops are used to execute a block of code multiple times.</p>
+      <p>Different types of loops are available in JavaScript.</p>
+      <code>for(let i=0; i<5; i++){ console.log(i); }</code>
+      <ul>
+        <li>for loop</li>
+        <li>while loop</li>
+        <li>do...while loop</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Objects">
+      <header>Objects</header>
+      <p>Objects are collections of key-value pairs.</p>
+      <p>They allow storing structured data.</p>
+      <code>let car = {brand:"Toyota", model:"Corolla"};</code>
+      <p>You can access object properties using dot or bracket notation.</p>
+      <ul>
+        <li>Properties</li>
+        <li>Methods</li>
+      </ul>
+    </section>
+
+  </main>
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      display: flex;
+    }
+
+    /* Navbar */
+    #navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 250px;
+      height: 100%;
+      background: #333;
+      color: #fff;
+      padding: 20px;
+      overflow-y: auto;
+    }
+
+    #navbar header {
+      font-size: 20px;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .nav-link {
+      display: block;
+      color: #fff;
+      text-decoration: none;
+      padding: 8px 0;
+      transition: 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #ff9800;
+    }
+
+    /* Main Content */
+    #main-doc {
+      margin-left: 270px;
+      padding: 20px;
+      flex: 1;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    section header {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    code {
+      background: #f4f4f4;
+      padding: 4px 6px;
+      border-radius: 4px;
+      display: inline-block;
+      margin: 5px 0;
+    }
+
+    li {
+      margin-left: 20px;
+    }
+
+    /* Media Query */
+    @media (max-width: 768px) {
+      body {
+        flex-direction: column;
+      }
+
+      #navbar {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+
+      #main-doc {
+        margin-left: 0;
+      }
+    }
+
+** end of styles.css **
+
