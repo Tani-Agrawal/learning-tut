@@ -1,0 +1,49 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Video Compilation Page</title>
+</head>
+
+<body>
+    <main>
+        <h1>Video compilation page</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <section>
+            <h2>video1</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <iframe 
+            src=""
+            title="video1" 
+            width="560"
+            height="315"
+            ></iframe>
+        </section>
+        <section> 
+            <h2>video2</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <iframe 
+            src=""
+            title="video2" 
+            width="560"
+            height="315"
+            ></iframe></section>
+        <section> 
+            <h2>video3</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <iframe 
+            src=""
+            title="video3" 
+            width="560"
+            height="315"
+            ></iframe></section>
+    </main>
+</body>
+
+</html>
+
+** end of index.html **
+
