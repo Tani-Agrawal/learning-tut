@@ -1,0 +1,101 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newspaper Layout</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="newspaper-layout">
+    
+    <header class="title">
+      <h1>Daily News</h1>
+    </header>
+    
+    <article class="feature-article">
+      <h2>Main Feature Article</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+    </article>
+    
+    <figure class="cover-image">
+      <img src="cover.jpg" alt="Newspaper Cover Image">
+    </figure>
+    
+    <article class="secondary-article">
+      <h2>Secondary Article</h2>
+      <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Praesent sapien massa.</p>
+    </article>
+    
+    <article class="small-article1">
+      <h3>Small Article 1</h3>
+      <p>Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.</p>
+    </article>
+    
+    <article class="small-article2">
+      <h3>Small Article 2</h3>
+      <p>Nulla quis lorem ut libero malesuada feugiat. Pellentesque in ipsum id orci porta dapibus.</p>
+    </article>
+    
+    <article class="small-article3">
+      <h3>Small Article 3</h3>
+      <p>Donec rutrum congue leo eget malesuada. Cras ultricies ligula sed magna dictum porta.</p>
+    </article>
+
+  </main>
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+.newspaper-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr 1fr 1fr;
+  gap: 20px;
+  
+  /* Define named grid areas */
+  grid-template-areas:
+    "title title title"
+    "feature-article feature-article cover-image"
+    "secondary-article secondary-article cover-image"
+    "small-article1 small-article2 small-article3";
+}
+
+/* Assign grid areas to elements */
+.title { grid-area: title; }
+.feature-article { grid-area: feature-article; }
+.secondary-article { grid-area: secondary-article; }
+.cover-image { grid-area: cover-image; }
+.small-article1 { grid-area: small-article1; }
+.small-article2 { grid-area: small-article2; }
+.small-article3 { grid-area: small-article3; }
+
+/* Styling for readability */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1, h2, h3 {
+  margin: 0 0 10px 0;
+}
+
+p {
+  margin: 0 0 15px 0;
+}
+
+.cover-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+** end of styles.css **
+
