@@ -1,0 +1,155 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Book Inventory</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Book Inventory</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Category</th>
+        <th>Status</th>
+        <th>Rate</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="read">
+        <td>The Great Gatsby</td>
+        <td>F. Scott Fitzgerald</td>
+        <td>Classic</td>
+        <td><span class="status">Read</span></td>
+        <td><span class="rate three"><span></span><span></span><span></span></span></td>
+      </tr>
+      <tr class="to-read">
+        <td>1984</td>
+        <td>George Orwell</td>
+        <td>Dystopian</td>
+        <td><span class="status">To Read</span></td>
+        <td><span class="rate one"><span></span><span></span><span></span></span></td>
+      </tr>
+      <tr class="in-progress">
+        <td>Becoming</td>
+        <td>Michelle Obama</td>
+        <td>Biography</td>
+        <td><span class="status">In Progress</span></td>
+        <td><span class="rate two"><span></span><span></span><span></span></span></td>
+      </tr>
+      <tr class="read">
+        <td>To Kill a Mockingbird</td>
+        <td>Harper Lee</td>
+        <td>Classic</td>
+        <td><span class="status">Read</span></td>
+        <td><span class="rate two"><span></span><span></span><span></span></span></td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+/* General table styling */
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: center;
+}
+th, td {
+  border: 1px solid #333;
+  padding: 10px;
+}
+h1 {
+  text-align: center;
+}
+
+/* Attribute selectors for row classes */
+tr[class="read"] {
+  background-image: linear-gradient(to right, #c8e6c9, #a5d6a7);
+}
+tr[class="to-read"] {
+  background-image: linear-gradient(to right, #fff9c4, #fff176);
+}
+tr[class="in-progress"] {
+  background-image: linear-gradient(to right, #bbdefb, #64b5f6);
+}
+
+/* Display span as inline-block */
+span {
+  display: inline-block;
+}
+
+/* ---- STATUS with ATTRIBUTE SELECTORS ---- */
+
+/* 26–28: status inside to-read */
+tr[class="to-read"] span[class="status"] {
+  border: 1px solid #fdd835;
+  background-image: linear-gradient(to bottom, #fffde7, #fff59d);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* 29–31: status inside read */
+tr[class="read"] span[class="status"] {
+  border: 1px solid #388e3c;
+  background-image: linear-gradient(to bottom, #e8f5e9, #81c784);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* 32–34: status inside in-progress */
+tr[class="in-progress"] span[class="status"] {
+  border: 1px solid #1976d2;
+  background-image: linear-gradient(to bottom, #e3f2fd, #64b5f6);
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* ---- STATUS + RATE wrapper ---- */
+/* 35–38 */
+span[class="status"],
+span[class^="rate"] {
+  height: 20px;
+  width: auto;
+  padding: 2px;
+}
+
+/* ---- Stars inside rate ---- */
+span[class^="rate"] > span {
+  border: 1px solid #555;
+  border-radius: 50%;
+  margin: 0 2px;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+}
+
+/* ---- Rating fills ---- */
+span[class~="one"] > span:first-child {
+  background-image: linear-gradient(to bottom, #ffeb3b, #fbc02d);
+}
+span[class~="two"] > span:nth-child(-n+2) {
+  background-image: linear-gradient(to bottom, #ffeb3b, #fbc02d);
+}
+/* 50: target span elements inside span elements with 'three' in class */
+span[class~="three"] > span {
+  /* 51: give them a gradient fill */
+  background-image: linear-gradient(to bottom, #ffeb3b, #fbc02d);
+}
+
+
+** end of styles.css **
+
