@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  position: sticky;
+  background: #fff;
+  color: #000;
+  text-align: center;
+  padding: 15px 20px;
+  top: 0;
+  z-index: 1000; /*upr hi rkhne ke liye*/
+}
+
+.hero {
+  padding: 20px;
+  height: 2000px;
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  background: linear-gradient(
+    60deg,
+    rgb(235, 95, 235),
+    rgb(253, 173, 186),
+    lightpink,
+    lightgreen,
+    lightblue
+  );
+}

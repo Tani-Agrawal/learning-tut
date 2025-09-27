@@ -1,0 +1,90 @@
+/*font-import*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*basic reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(240, 190, 207);
+}
+
+.container {
+  max-width: 1100px;
+  min-height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 1rem;
+}
+
+button {
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  margin: 5px 0;
+  padding: 12px 20px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.btn-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /*line m 3 button*/
+  margin: 15px;
+  gap: 22px;
+}
+
+.btn {
+  background: green;
+}
+
+.signin{
+    background: steelblue;
+}
+
+.signup{
+    background: rgb(26, 233, 26);
+}
+
+.register{
+    background: rgb(66, 66, 212);
+}
+
+.learn-more{
+background: slateblue;
+}
+
+.read-more{
+    background: rgb(141, 220, 141);
+}
+
+/*hover*/
+.btn:hover {
+  background: rgb(105, 170, 105);
+}
+
+.signin:hover{
+    background: rgb(157, 183, 205);
+}
+
+.signup:hover{
+    background: rgb(121, 171, 121);
+}
+
+.register:hover{
+    background: rgb(37, 37, 58);
+}
+
+.learn-more:hover{
+background: rgb(129, 123, 164);
+}
+
+.read-more:hover{
+    background: rgb(2, 72, 2);
+}
