@@ -1,0 +1,52 @@
+/*default*/
+/*jb mostly jgh same color hi use hoga toh yh use hogaa*/
+:root {
+    --bg-color:beige;
+    --text-color :#7eb3bf;
+    --primary-color :#08d727;
+    --font-size:18px;
+}
+
+.dark-theme{
+    --bg-color:#121212;
+    --text-color:#fff;
+    --primary-color:#9b59b6;
+}
+/*varibales*/
+body{
+    background: lightpink;
+}
+section{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: var(--font-size);
+    text-align: center;
+    font-family: sans-serif;
+    padding: 50px;
+}
+.dark-theme{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: var(--font-size);
+    text-align: center;
+    font-family: sans-serif;
+    padding: 50px;
+}
+h1 {
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: var(--primary-color);
+  color: var(--bg-color);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: var(--font-size);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}

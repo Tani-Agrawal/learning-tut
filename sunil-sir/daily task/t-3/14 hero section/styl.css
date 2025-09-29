@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header{
+    text-align: center;
+    font-weight: bold;
+    background: rgb(232, 232, 145);
+}
+
+
+.heroo {
+  height: 100vh; /*full screen*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  background: linear-gradient(
+    45deg,
+    red,
+    rgb(252, 102, 102),
+    rgb(254, 147, 147),
+    rgb(249, 249, 151),
+    lightgreen,
+    rgb(89, 241, 89),
+    green
+  );
+}
+
+.hero-content {
+  position: relative;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.heroo h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.heroo p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.heroo button {
+  padding: 12px 24px;
+  font-size: 1rem;/*1rem=16px*/
+  background: #06b6d4;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.heroo button:hover {
+  background: #0891b2;
+}
