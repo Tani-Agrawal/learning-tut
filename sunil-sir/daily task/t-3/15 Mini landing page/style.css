@@ -34,21 +34,10 @@ nav ul li {
   text-transform: capitalize;
 }
 
-nav ul li:hover {
-  text-decoration: underline;
-}
 
 /* Center only container */
 .container {
-  flex: 1; /* take remaining space */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
+  width: calc(100% - 60px);
 }
 
 h1 {
@@ -76,4 +65,7 @@ p {
 .btn:hover {
   background: #ec6ead;
   color: #fff;
+}
+nav ul li a {
+
 }
